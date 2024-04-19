@@ -7,16 +7,12 @@
     <style>
         body { margin: 0; padding: 0; }
         .iframe-container { 
-            position: relative; 
             width: 100%; 
-            padding-bottom: 56.25%; /* Proporción 16:9 para hacer el contenedor responsive */
-            height: 0; 
+            height: calc(100vh - 20px); /* Se ajusta a la altura de la pantalla menos un pequeño margen */
+            margin: 10px auto; /* Agrega un pequeño margen en la parte superior e inferior */
             overflow: hidden; 
         }
         .iframe-container iframe { 
-            position: absolute; 
-            top: 0; 
-            left: 0; 
             width: 100%; 
             height: 100%; 
         }
@@ -29,3 +25,4 @@
     </div>
 </body>
 </html>
+
